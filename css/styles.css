@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .inicio {
@@ -22,12 +25,16 @@
     flex-direction: row; /* Mantém o layout horizontal para os itens do cabeçalho */
     width: 100%;
     height: 70px;
+    position: fixed;
 }
 
 .inicio .cabecalho .logo {
     display: flex;
+    align-items: center;
     width: 100px;
     height: 100%;
+    margin-left: 100px;
+    margin-top: 10px;
 }
 
 .inicio .cabecalho nav {
@@ -41,15 +48,84 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 100px;
 }
 
-.inicio .listaIni .cabecalho .menu li {
-    display: flex;
-    flex-direction: row; /* Mantém os itens do menu em uma linha */
+.inicio .listaIni .menu li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.inicio .listaIni .menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #dcb208;
+    text-shadow: black;
+}
+
+.inicio .listaIni .menu li :hover {
+    color: black;
+    background-color: #dcb208;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .inicio .titles {
     display: flex;
+    width: 900px;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 100px;
+    align-items:first baseline;
+}
+
+.inicio .titles .titulo {
+    font-size: 50px;
+    color: #dcb208;
+}
+
+.inicio .titles .subTitle {
+    font-size: 22px;
+    color: #dcb208;
+    padding-left: 130px;
+}
+
+.inicio .titles .descric {
+    font-size: 16px;
+    padding: 40px 0px 40px 0px;
+    line-height: 20px;
+}
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.shop .boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.shop .boxes .box {
+    padding: 0px 100px;
+}
+
+.shop .boxes .box .bxTitle {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 25px;
+    color: #dcb208;
+}
+
+.shop .boxes .box .bxDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
 }
