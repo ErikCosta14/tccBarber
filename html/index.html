@@ -14,11 +14,13 @@
 <body>
     <div class="inicio">
         <header class="cabecalho">
-            <img href="#ini" class="logo" src="../imagens/barberShop.png">
-            
+            <a href="#">
+                <img class="logo" src="../imagens/barberShop.png">
+            </a>
+
             <nav class="listaIni">
                 <ul class="menu">
-                    <li><a href="#ini">Inicio</a></li>
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="#cortes">Cortes</a></li>
                     <li><a href="#preco">Preços</a></li>
                     <li><a href="#localiza">Localização</a></li>
@@ -27,7 +29,7 @@
             </nav>
         </header>
 
-        <hgroup class="titles" id="#ini">
+        <hgroup class="titles" id="ini">
             <h1 class="titulo">SEJA BEM VINDO AO BARBER SHOP</h1>
             <h2 class="subTitle">Bom para sua aparência e boa para seu bolso</h2>
             <p class="descric">
@@ -51,6 +53,70 @@
             <div class="box">
                 <h2 class="bxTitle">ÁREA DE CONVIVÊNCIA</h2>
                 <p class="bxDesc">Espere seu corte com diversão</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-container" id="cortes">
+        <h2 class="cort">CORTES</h2>
+
+        <input type="radio" name="carousel" id="image1" checked>
+        <input type="radio" name="carousel" id="image2">
+        <input type="radio" name="carousel" id="image3">
+        <input type="radio" name="carousel" id="image4">
+
+       
+            <div class="carousel-slide">
+                <img src="../imagens/corte1.jpg" alt="Imagem 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="../imagens/corte2.jpg" alt="Imagem 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="../imagens/corte3.jpg" alt="Imagem 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="../imagens/corte4.jpg" alt="Imagem 4">
+            </div>
+        
+
+        <div class="carousel-nav">
+            <label for="image1"></label>
+            <label for="image2"></label>
+            <label for="image3"></label>
+            <label for="image4"></label>
+        </div>
+    </div>
+
+    <div class="prec" id="preco">
+        <h1 class="titPrec">PREÇOS DOS NOSSOS SERVIÇOS</h1>
+        
+        <div class="dif">
+            <div class="prec1">
+                <h2 class="titu">CABELO</h2>
+                <h3 class="desc">Qualquer corte</h3>
+                <div class="valor">
+                    <h3 class="preci">R$</h3>
+                    <h3 class="val">25,90</h3>
+                </div>
+            </div>
+            
+            <div class="prec1">
+                <h2 class="titu">BARBA</h2>
+                <h3 class="desc">Todo tipo de barba</h3>
+                <div class="valor">
+                    <h3 class="preci">R$</h3>
+                    <h3 class="val">10,00</h3>
+                </div>
+            </div>
+            
+            <div class="prec1">
+                <h2 class="titu">SOBRANCELHA</h2>
+                <h3 class="desc">Sua sobrancelha suas regras</h3>
+                <div class="valor">
+                    <h3 class="preci">R$</h3>
+                    <h3 class="val">5,00</h3>
+                </div>
             </div>
         </div>
     </div>
