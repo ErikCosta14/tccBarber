@@ -113,7 +113,7 @@
 }
 
 .shop .boxes .box {
-    padding: 0px 100px;
+    margin: 0px 80px;
 }
 
 .shop .boxes .box .bxTitle {
@@ -131,82 +131,39 @@
     font-size: 16px;
 }
 
-.carousel {
+.cortes {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 800px;
-    position: relative;
+    height: 450px;
     background-color: black;
-}
-
-.carousel .corte{
-    display: flex;
-    justify-content: center;
     color: #dcb208;
-    font-size: 30px;
-    padding-top: 50px;
 }
 
-.carousel input {
-    display: none;
-}
-
-.slides {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    justify-content: center;
-    margin-top: 40px;
-}
-  
-.slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: none;
-    text-decoration: none;
-}
-  
-.slide img {
-    width: 500px;
-    height: 600px;
-    position: relative;
-    object-fit: cover;
-    border: 10px solid white;
-    border-radius: 10px;
-}
-  
-.navigation {
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
+.cortes h1 {
     display: flex;
     justify-content: center;
-}
-  
-.navigation label {
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border: 2px solid #dcb208;
-    border-radius: 50%;
-    margin: 10px;
-    cursor: pointer;
+    margin-top: 50px;
+    color: #dcb208;
+    font-size: 32px;
 }
 
-.navigation label:hover{
-    background-color: #dcb208;
-    cursor: pointer;
+.cortes .imgCorts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cortes .imgCorts .corte {
+    margin: 30px;
+}
+
+.cortes .imgCorts .corte img {
+    width: 200px;
+    height: 250px;
     border: 2px solid white;
-}
-
-#slide1:checked ~ .slides .slide:nth-child(1),
-#slide2:checked ~ .slides .slide:nth-child(2),
-#slide3:checked ~ .slides .slide:nth-child(3),
-#slide4:checked ~ .slides .slide:nth-child(4) {
-    display: flex;
-    justify-content: center;
+    border-radius: 10px;
 }
 
 .prec {
