@@ -234,3 +234,35 @@
     font-size: 37px;
     color: black;
 }
+
+.local {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.local .titLocal {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 32px;
+    color: #dcb208;
+}
+
+.local h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.local .map {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.local .map iframe {
+    border-radius: 10px;
+}
