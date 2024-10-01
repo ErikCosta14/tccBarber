@@ -67,6 +67,7 @@
 .inicio .listaIni .menu li :hover {
     color: black;
     background-color: #dcb208;
+    transition: 0.5s;
     padding: 5px;
     border-radius: 10px;
 }
@@ -280,17 +281,48 @@
     margin-top: 50px;
 }
 
-.marcHora form {
+.marcHora .forms {
+    display: flex;
+    justify-content: center;
+}
+
+.marcHora .forms form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
+    border: 2px solid #dcb208;
+    border-radius: 10px;
+}
+
+.marcHora .forms form .envia {
+    display: flex;
+    justify-content: center;
+}
+
+.marcHora .forms form .envia input {
+    font-size: 20px;
+    background-color: #dcb208;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+}
+
+.marcHora .forms form .envia input:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.429);
+    border: 1px solid #dcb208;
+    transition: 0.5s;
+    color: white;
 }
 
 .marcHora form .nomes {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .marcHora form .nomes label {
@@ -299,10 +331,16 @@
     margin: 0px 10px;
 }
 
+.marcHora form .nomes input {
+    background-color: rgba(32, 32, 32, 0.475);
+    border: 0.2px solid #dcb208;
+    height: 18px;
+    width: 120px;
+}
+
 .marcHora form .padrao {
     display: flex;
     flex-direction: row;
-    margin-left: 533px;
     margin-top: 10px;
 }
 
@@ -312,10 +350,59 @@
     margin: 0px 10px;
 }
 
-.marcHora form .servico .serv{
+.marcHora form .padrao #email {
+    background-color: rgba(32, 32, 32, 0.475);
+    border: 0.2px solid #dcb208;
+    height: 18px;
+    width: 348px;
+}
+
+.marcHora form .tellHor {
     display: flex;
-    margin-left: 543px;
+    flex-direction: row;
     margin-top: 10px;
+}
+
+.marcHora form .tellHor label {
     font-size: 16px;
     color: #dcb208;
+    margin: 0px 10px;
+}
+
+.marcHora form .tellHor #horario {
+    background-color: rgba(32, 32, 32, 0.475);
+    border: 0.2px solid #dcb208;
+    height: 18px;
+    width: 127px;
+}
+
+.marcHora form .tellHor #telefone {
+    background-color: rgba(32, 32, 32, 0.475);
+    border: 0.2px solid #dcb208;
+    height: 18px;
+    width: 87px;
+}
+
+.marcHora form .servico .serv{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #dcb208;
+}
+
+.marcHora form .servico .disp {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.marcHora form .servico .disp .opcCheck {
+    margin-left: 10px;
+}
+
+.marcHora form .servico .disp .opcCheck label {
+    font-size: 14px;
 }

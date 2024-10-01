@@ -124,49 +124,55 @@
     <div id="marcar" class="marcHora">
         <h2 class="mcHor">MARCAR HORÁRIO</h2>
 
-        <form action="" method="post">
-            <div class="nomes">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" />
+        <div class="forms">
+            <form action="" method="post">
+                <div class="nomes">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" />
 
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" id="sobrenome" />
-            </div>
-            
-            <div class="padrao">
-                <label for="email">Email:</label>
-                <input type="text" id="email" />
-            </div>
-
-            <div class="padrao">
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" />
-            </div>
-
-            <div class="padrao">
-                <label for="horario">Dia e Horário:</label>
-                <input type="datetime-local" id="horario" />
-            </div>
-
-            <div class="servico">
-                <legend class="serv">Serviço:</legend>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" />
+                </div>
                 
-                <div class="opcCheck">
-                    <input type="checkbox" id="cabelo" />
-                    <label for="cabelo">Cabelo</label>
+                <div class="padrao">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" />
                 </div>
 
-                <div class="opcCheck">
-                    <input type="checkbox" id="barba" />
-                    <label for="barba">Barba</label>
+                <div class="tellHor">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" />
+
+                    <label for="horario">Dia e Horário:</label>
+                    <input type="datetime-local" id="horario" />
                 </div>
 
-                <div class="opcCheck">
-                    <input type="checkbox" id="sobrancelha" />
-                    <label for="sobrancelha">Sobrancelha</label>
+                <div class="servico">
+                    <legend class="serv">Serviço:</legend>
+                    
+                    <div class="disp">
+                        <div class="opcCheck">
+                            <input type="checkbox" id="cabelo" />
+                            <label for="cabelo">Cabelo</label>
+                        </div>
+
+                        <div class="opcCheck">
+                            <input type="checkbox" id="barba" />
+                            <label for="barba">Barba</label>
+                        </div>
+
+                        <div class="opcCheck">
+                            <input type="checkbox" id="sobrancelha" />
+                            <label for="sobrancelha">Sobrancelha</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </form>
+                
+                <div class="envia">
+                    <input type="submit" value="Marcar">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
