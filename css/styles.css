@@ -196,6 +196,7 @@
     width: 300px;
     background-color: white;
     margin: 30px;
+    border-radius: 10px;
 }
 
 .prec .dif .prec1 h2 {
@@ -452,6 +453,7 @@
 }
 
 .fot .insta .nmInsta {
+    text-decoration: none;
     margin-right: 20px;
     color: black;
 }
