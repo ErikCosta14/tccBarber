@@ -293,6 +293,7 @@
     margin-top: 30px;
     border: 2px solid #dcb208;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .marcHora .forms form .envia {
@@ -332,10 +333,27 @@
 }
 
 .marcHora form .nomes input {
-    background-color: rgba(32, 32, 32, 0.475);
-    border: 0.2px solid #dcb208;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2px solid #dcb208;
     height: 18px;
     width: 120px;
+}
+
+#nome::placeholder {
+    color: rgba(255, 255, 255, 0.164);
+}
+
+#sobrenome::placeholder {
+    color: rgba(255, 255, 255, 0.164);
+}
+
+#email::placeholder {
+    color: rgba(255, 255, 255, 0.164);
+}
+
+#telefone::placeholder {
+    color: rgba(255, 255, 255, 0.164);
 }
 
 .marcHora form .padrao {
@@ -351,8 +369,9 @@
 }
 
 .marcHora form .padrao #email {
-    background-color: rgba(32, 32, 32, 0.475);
-    border: 0.2px solid #dcb208;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2px solid #dcb208;
     height: 18px;
     width: 348px;
 }
@@ -370,15 +389,17 @@
 }
 
 .marcHora form .tellHor #horario {
-    background-color: rgba(32, 32, 32, 0.475);
-    border: 0.2px solid #dcb208;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2px solid #dcb208;
     height: 18px;
     width: 127px;
 }
 
 .marcHora form .tellHor #telefone {
-    background-color: rgba(32, 32, 32, 0.475);
-    border: 0.2px solid #dcb208;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2px solid #dcb208;
     height: 18px;
     width: 87px;
 }
@@ -405,4 +426,32 @@
 
 .marcHora form .servico .disp .opcCheck label {
     font-size: 14px;
+}
+
+.fot {
+    display: flex;
+    flex-direction: row;
+    background-color: #dcb208;
+    width: 100%;
+    height: 50px;
+}
+
+.fot .insta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+}
+
+.fot .insta .logInst {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+
+.fot .insta .nmInsta {
+    margin-right: 20px;
+    color: black;
 }
