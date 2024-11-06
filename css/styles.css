@@ -38,10 +38,52 @@
 .inicio .cabecalho .logo {
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 100%;
+    width: 70px;
     margin-left: 100px;
     margin-top: 10px;
+}
+
+.inicio .cabecalho .imageLogin {
+    display: flex;
+    align-items: center;
+    width: 55px;
+    margin-right: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.inicio .cabecalho .loginMenu .menuApa{
+    display: none;
+    margin-top: 10px;
+    transition: 0.5s;
+    background-color: black;
+    padding: 5%;
+}
+
+.inicio .cabecalho .loginMenu .menuApa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio .cabecalho .loginMenu .menuApa ul li {
+    margin-right: 150px;
+}
+
+.inicio .cabecalho .loginMenu .menuApa ul li a {
+    font-size: 16px;
+    color: #dcb208;
+    text-decoration: none;
+}
+
+.inicio .cabecalho .loginMenu .menuApa ul li a:hover {
+    background-color: #dcb208;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
 .inicio .cabecalho nav {
