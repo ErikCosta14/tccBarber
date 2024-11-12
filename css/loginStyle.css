@@ -23,7 +23,6 @@
 
 .interface .inter {
     display: flex;
-    align-items: center;
     justify-content: center;
     background-size: cover;
     background-color: #dcb208d3;
@@ -31,9 +30,56 @@
     height: 100vh;
 }
 
+.interface .inter .list {
+    list-style: none;
+    margin-top: 6%;
+}
+
+.interface .inter .list .volt {
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: black;
+}
+
+.interface .inter .list .volt:hover {
+    cursor: pointer;
+    background-color: black;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    color: #dcb208;
+}
+
 .interface .inter .msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     border-radius: 10px;
+    margin-top: 9%;
+    width: 30%;
+    height: 70%;
+}
+
+.interface .inter .msg .barberImg {
+    width: 250px;
+}
+
+.interface .inter .msg .bemVindo {
+    color: #dcb208;
+    font-size: 50px;
+}
+
+.interface .inter .msg .esper {
+    font-size: 17px;
+}
+
+.interface .inter .log {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 9%;
     width: 30%;
     height: 70%;
 }
